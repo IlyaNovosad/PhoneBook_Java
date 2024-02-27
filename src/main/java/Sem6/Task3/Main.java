@@ -14,7 +14,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         String[] massOne = {"qwe", "asd", "qwe", "x"};
-        String[] massTwo = {"qwe", "v", "asd", "qwe", "qwe"};
+        String[] massTwo = {"qwe", "v"};
         Set<String> setThree = listCompare(massOne, massTwo);
         counter(massOne, massTwo, setThree);
     }
@@ -24,9 +24,9 @@ public class Main {
         union.addAll(Arrays.asList(massTwo));
         System.out.println("union = " + union);
         for (String elem : setThree) {
-            Integer couter = 0;
+            int couter = 0;
             for (String listElem : union) {
-                if (elem == listElem) couter++;
+                if (Objects.equals(elem, listElem)) couter++;
             }
             System.out.println(elem + " = " + couter);
         }
