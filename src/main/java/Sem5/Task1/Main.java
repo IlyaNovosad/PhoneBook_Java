@@ -2,7 +2,7 @@
     Посчитать количество вхождений каждого символа в текст.
 */
 
-package Sem5;
+package Sem5.Task1;
 
 import java.util.HashMap;
 import java.util.Map;
