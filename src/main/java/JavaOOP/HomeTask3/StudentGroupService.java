@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@Getter
+
 public record StudentGroupService(StudentGroup studentGroup) {
 
     public List<Student> getSortedStudentGroup() {
