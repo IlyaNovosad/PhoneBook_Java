@@ -11,12 +11,12 @@ public class Main {
         System.out.println(vmBottleOfWater.getProduct("Вода1"));
 
         VendingMachineHotDrinks vm = new VendingMachineHotDrinks();
-        vm.addHotDrink(new HotDrink("Coffe", 100, 0.3, 80));
+        vm.addHotDrink(new HotDrink("Coffee", 100, 0.3, 80));
         vm.addHotDrink(new HotDrink("Tea", 100, 0.3, 100));
         vm.addHotDrink(new HotDrink("Espresso", 100, 0.1, 80));
 
         System.out.println(vm.getProduct("Tea"));
-        System.out.println(vm.getProduct("Coffe", 0.3, 10));
-        System.out.println(vm.getProduct("Coffe", 0.3, 80));
+        System.out.println(vm.getProduct("Coffee", 0.3, 10));
+        System.out.println(vm.getProduct("Coffee", 0.3, 80));
     }
 }
