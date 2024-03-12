@@ -2,7 +2,6 @@ package JavaOOP.Sem2.ExampleTask1;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class Market implements MarketBehaviour, QueueBehaviour {
     private final List<Actor> queue = new ArrayList<>();
