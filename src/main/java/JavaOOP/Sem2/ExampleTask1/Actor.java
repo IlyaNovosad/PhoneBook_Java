@@ -1,13 +1,12 @@
 package JavaOOP.Sem2.ExampleTask1;
 
+import lombok.Getter;
+
 public abstract class Actor implements ActorBehaviour{
+    @Getter
     protected String name;
     protected boolean makeOrder;
     protected boolean takeOrder;
-
-    public String getName() {
-        return name;
-    }
 
     public Actor(String name) {
         this.name = name;
