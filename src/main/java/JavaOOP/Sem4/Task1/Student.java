@@ -27,7 +27,6 @@ public class Student extends User implements Comparable<Student>{
         } else if (this.studentID > student.studentID) {
             return 1;
         }
-
         return 0;
     }
 }
